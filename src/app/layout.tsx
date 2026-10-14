@@ -25,7 +25,7 @@ const notoKannada = Noto_Sans_Kannada({
 });
 
 export const metadata: Metadata = {
-  title: "ಕಿಸಾನ್ ಸಾಥಿ · Kisan Sathi",
+  title: "ಅದಮ್ಯ ಕೃಷಿ · Adhamya Krishi",
   description:
     "ರಾಗಿ, ತೆಂಗು, ಶುಂಠಿ, ಮುಸುಕಿನಜೋಳ ಮತ್ತು ಕಬ್ಬಿನ ಬೇಸಾಯ ಕ್ರಮಗಳು, ಸರ್ಕಾರಿ ಯೋಜನೆಗಳು ಮತ್ತು ಕೃಷಿ ಸಂಶೋಧನಾ ಕೇಂದ್ರಗಳ ಸಂಪರ್ಕ ವಿವರಗಳು. — Package of practices for ragi, coconut, ginger, maize and sugarcane, government schemes, and agricultural research contacts.",
 };

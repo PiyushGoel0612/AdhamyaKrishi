@@ -3,7 +3,7 @@ import type { Localized } from "@/lib/types";
 /** All UI chrome. Content strings live with their data in the other
  *  files in this folder, transcribed from the source documents. */
 export const UI = {
-  brand: { kn: "ಕಿಸಾನ್ ಸಾಥಿ", en: "Kisan Sathi" },
+  brand: { kn: "ಅದಮ್ಯ ಕೃಷಿ", en: "Adhamya Krishi" },
   tagline: {
     kn: "ಬೆಳೆ, ಯೋಜನೆ ಮತ್ತು ಸಂಪರ್ಕ ಮಾಹಿತಿ",
     en: "Crops, schemes and contacts",
@@ -95,11 +95,11 @@ export const UI = {
   readMore: { kn: "ಇನ್ನಷ್ಟು ಓದಿ", en: "Read more" },
   seeAll: { kn: "ಎಲ್ಲವನ್ನೂ ನೋಡಿ", en: "See all" },
   sourceNotice: {
-    kn: "ಈ ಮಾಹಿತಿಯನ್ನು ಬೇಸಾಯ ಕ್ರಮಗಳ ಕೈಪಿಡಿಯಿಂದ (Package of Practices) ನೇರವಾಗಿ ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ. ಔಷಧಿಯ ಪ್ರಮಾಣ ಮತ್ತು ತಳಿ ಆಯ್ಕೆಯನ್ನು ಬಳಸುವ ಮೊದಲು ನಿಮ್ಮ ಹತ್ತಿರದ ರೈತ ಸಂಪರ್ಕ ಕೇಂದ್ರ ಅಥವಾ ಕೃಷಿ ವಿಜ್ಞಾನ ಕೇಂದ್ರದಲ್ಲಿ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
-    en: "This information is taken directly from the Package of Practices. Confirm chemical doses and variety choice at your nearest Raitha Samparka Kendra or Krishi Vigyan Kendra before acting on them.",
+    kn: "ಈ ಮಾಹಿತಿಯನ್ನು ಬೇಸಾಯ ಕ್ರಮಗಳ ಕೈಪಿಡಿಯಿಂದ (ಸುಧಾರಿತ ಬೇಸಾಯ ಕ್ರಮಗಳು (POP) ಕೃಷಿ ವಿಶ್ವವಿದ್ಯಾಲಯ, ಬೆಂಗಳೂರು ತೋಟಗಾರಿಕೆ ವಿಜ್ಞಾನಗಳ ವಿಶ್ವವಿದ್ಯಾಲಯ, ಬಾಗಲಕೋಟೆ) ನೇರವಾಗಿ ತೆಗೆದುಕೊಳ್ಳಲಾಗಿದೆ. ಔಷಧಿಯ ಪ್ರಮಾಣ ಮತ್ತು ತಳಿ ಆಯ್ಕೆಯನ್ನು ಬಳಸುವ ಮೊದಲು ನಿಮ್ಮ ಹತ್ತಿರದ ರೈತ ಸಂಪರ್ಕ ಕೇಂದ್ರ ಅಥವಾ ಕೃಷಿ ವಿಜ್ಞಾನ ಕೇಂದ್ರದಲ್ಲಿ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
+    en: "This information is taken directly from 'The POP of University of Agricultural Sciences Banglore and University of Horticultural Sciences, Bagalkote'. Confirm chemical doses and variety choice at your nearest Raitha Samparka Kendra or Krishi Vigyan Kendra before acting on them.",
   },
   footerNote: {
-    kn: "ಕಿಸಾನ್ ಸಾಥಿ ಒಂದು ಮಾಹಿತಿ ಸೇವೆ. ಇದು ಸರ್ಕಾರಿ ವೆಬ್‌ಸೈಟ್ ಅಲ್ಲ ಮತ್ತು ಯಾವುದೇ ಅರ್ಜಿಗೆ ಅನುಮೋದನೆ ನೀಡಲು ಸಾಧ್ಯವಿಲ್ಲ.",
-    en: "Kisan Sathi is an information service. It is not a government website and cannot approve any application.",
+    kn: "ಅದಮ್ಯ ಕೃಷಿ ಒಂದು ಮಾಹಿತಿ ಸೇವೆ. ಇದು ಸರ್ಕಾರಿ ವೆಬ್‌ಸೈಟ್ ಅಲ್ಲ ಮತ್ತು ಯಾವುದೇ ಅರ್ಜಿಗೆ ಅನುಮೋದನೆ ನೀಡಲು ಸಾಧ್ಯವಿಲ್ಲ.",
+    en: "Adhamya Krishi is an information service. It is not a government website and cannot approve any application.",
   },
 } satisfies Record<string, Localized>;

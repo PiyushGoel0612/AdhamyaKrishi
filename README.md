@@ -1,4 +1,4 @@
-# ಕಿಸಾನ್ ಸಾಥಿ · Kisan Sathi
+# ಅದಮ್ಯ ಕೃಷಿ · Adhamya Krishi
 
 An information site for farmers in Karnataka: the package of practices for
 five crops, the government schemes available to them, season-wise sowing
