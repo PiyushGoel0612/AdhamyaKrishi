@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Kisan Sathi — light theme only.
+   Warm, high-contrast, field-inspired. No dark mode by design:
+   the audience reads this outdoors on cheap phones in bright sun,
+   where a light surface is the legible one.
+   ------------------------------------------------------------------ */
+
+@theme {
+  /* Typeface — Noto Sans Kannada leads because Kannada is the primary
+     script; Mukta picks up the Latin that Noto's Latin set handles less
+     comfortably at text sizes. */
+  --font-sans: var(--font-kannada), var(--font-mukta), "Noto Sans Kannada",
+    ui-sans-serif, system-ui, sans-serif;
+
+  /* Surfaces: warm paper, never clinical white-on-grey */
+  --color-paper: #fdfcf7;
+  --color-surface: #ffffff;
+  --color-surface-sunk: #f6f3ea;
+
+  /* Hairlines */
+  --color-line: #e5dfd0;
+  --color-line-strong: #cfc6b0;
+
+  /* Ink */
+  --color-ink: #1b201c;
+  --color-ink-soft: #5b625a;
+  --color-ink-faint: #8a9089;
+
+  /* Primary — deep field green, 7.1:1 on paper */
+  --color-leaf-50: #eaf4ed;
+  --color-leaf-100: #d3e8da;
+  --color-leaf-200: #a8d0b6;
+  --color-leaf-500: #2e8b51;
+  --color-leaf-600: #1b7a3e;
+  --color-leaf-700: #145c2e;
+  --color-leaf-800: #0f4322;
+
+  /* Accent — harvest amber, for alerts, deadlines, "verify this" */
+  --color-harvest-50: #fef4e4;
+  --color-harvest-100: #fde8c7;
+  --color-harvest-500: #d97706;
+  --color-harvest-700: #9a5408;
+
+  /* Season coding, used consistently across crop + price views */
+  --color-kharif: #0f766e;
+  --color-kharif-bg: #d8f0ed;
+  --color-rabi: #1e5f8e;
+  --color-rabi-bg: #dbeafc;
+  --color-zaid: #b45309;
+  --color-zaid-bg: #fdeed6;
+
+  /* Status */
+  --color-danger: #b3261e;
+  --color-danger-bg: #fbe6e4;
+
+  --radius-card: 14px;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  /* 17px base: this audience skews older and reads on small screens */
+  font-size: 17px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  /* A farmer-facing page must never scroll sideways on a phone. This is a
+     backstop; overflowing children are still fixed at the source. */
+  overflow-x: clip;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Prices and quantities must line up column-to-column */
+.tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+/* Visible, generous focus ring — many users are keyboard/switch users
+   and the default ring is far too subtle at this contrast. */
+:focus-visible {
+  outline: 3px solid var(--color-leaf-600);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Kannada sits lower and needs more room than Latin at the same size,
+   because of its stacked vowel signs and consonant conjuncts. It is the
+   default language here, so this applies to most of the site. */
+:lang(kn) {
+  line-height: 1.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
